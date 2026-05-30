@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://o7efy7go7uv3"]
+
+[ext_resource type="Texture2D" uid="uid://8ubythces66f" path="res://assets/Tiny Swords (Free Pack)/Terrain/Resources/Wood/Trees/Tree1.png" id="1_ut0oq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ym2jf"]
+atlas = ExtResource("1_ut0oq")
+region = Rect2(0, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gc7sv"]
+atlas = ExtResource("1_ut0oq")
+region = Rect2(192, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bemg4"]
+atlas = ExtResource("1_ut0oq")
+region = Rect2(384, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a6vbm"]
+atlas = ExtResource("1_ut0oq")
+region = Rect2(576, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xvhxl"]
+atlas = ExtResource("1_ut0oq")
+region = Rect2(768, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_avpns"]
+atlas = ExtResource("1_ut0oq")
+region = Rect2(960, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_du5xp"]
+atlas = ExtResource("1_ut0oq")
+region = Rect2(1152, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bj1vv"]
+atlas = ExtResource("1_ut0oq")
+region = Rect2(1344, 0, 192, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kaode"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ym2jf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gc7sv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bemg4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a6vbm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xvhxl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_avpns")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_du5xp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bj1vv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="arbol" type="Node2D" unique_id=231746746]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1960209935]
+texture_filter = 1
+position = Vector2(-1, 1)
+sprite_frames = SubResource("SpriteFrames_kaode")
+frame_progress = 0.17523938
